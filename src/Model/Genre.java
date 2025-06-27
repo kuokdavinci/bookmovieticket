@@ -1,4 +1,6 @@
-public enum _Genre {
+package Model;
+
+public enum Genre {
     Action,
     Comedy,
     Drama,

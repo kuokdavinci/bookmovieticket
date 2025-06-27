@@ -1,12 +1,13 @@
+package Model;
 
-public class _Ticket {
+public class Ticket {
     private int ticket_id;
-    private _User user;
-    private _Movie movie;
-    private _Chair chair;
-    private _Time time;
+    private User user;
+    private Movie movie;
+    private Chair chair;
+    private Time time;
 
-    public _Ticket (int ticket_id, _User user,_Movie movie, _Time time, _Chair chair ){
+    public Ticket(int ticket_id, User user, Movie movie, Time time, Chair chair ){
         this.ticket_id = ticket_id;
         this.user = user;
         this.movie = movie;
@@ -22,19 +23,19 @@ public class _Ticket {
         this.ticket_id = ticket_id;
     }
 
-    public _User getUser() {
+    public User getUser() {
         return user;
     }
 
-    public _Movie getMovie() {
+    public Movie getMovie() {
         return movie;
     }
 
-    public _Chair getChair() {
+    public Chair getChair() {
         return chair;
     }
 
-    public _Time getTime() {
+    public Time getTime() {
         return time;
     }
 

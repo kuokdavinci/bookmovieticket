@@ -1,8 +1,10 @@
-public class _Chair {
+package Model;
+
+public class Chair {
     private int chair_id;
     private boolean isBooked;
 
-    public _Chair(int chairId, boolean isBooked) {
+    public Chair(int chairId, boolean isBooked) {
         chair_id = chairId;
         this.isBooked = isBooked;
     }
@@ -23,12 +25,5 @@ public class _Chair {
         isBooked = booked;
     }
 
-    @Override
-    public String toString() {
-            if(isBooked)
-                return "X";
-            else if(!isBooked)
-                return "O";
-            return "";
-    }
+
 }

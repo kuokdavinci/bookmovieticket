@@ -1,11 +1,12 @@
+package Model;
 
-public class _Movie {
+public class Movie {
     private int movie_id;
     private String movie_name;
-    private _Genre genre;
+    private Genre genre;
     private int duration;
 
-    public _Movie(int movieId, String movieName, _Genre genre, int duration) {
+    public Movie(int movieId, String movieName, Genre genre, int duration) {
         movie_id = movieId;
         movie_name = movieName;
         this.genre = genre;
@@ -37,16 +38,16 @@ public class _Movie {
         this.movie_name = movie_name;
     }
 
-    public _Genre getGenre() {
+    public Genre getGenre() {
         return genre;
     }
 
-    public void setGenre(_Genre genre) {
+    public void setGenre(Genre genre) {
         this.genre = genre;
     }
 
     @Override
     public String toString() {
-        return "\nMovie: "+movie_name+"\n"+"Genre: "+genre+" - Duration: "+ duration;
+        return "\nModel.Movie: "+movie_name+"\n"+"Model.Genre: "+genre+" - Duration: "+ duration;
     }
 }

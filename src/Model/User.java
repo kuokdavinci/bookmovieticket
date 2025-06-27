@@ -1,12 +1,14 @@
+package Model;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class _User {
+public class User {
     private int user_id;
     private String name;
-    private List<_Ticket> tickets = new ArrayList<>();
+    private List<Ticket> tickets = new ArrayList<>();
 
-    public _User(int user_id,String name) {
+    public User(int user_id, String name) {
         this.user_id = user_id;
         this.name = name;
     }
